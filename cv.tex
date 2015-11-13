@@ -1,0 +1,217 @@
+\documentclass[a4paper,10pt]{article}
+
+%A Few Useful Packages
+\usepackage{marvosym}
+\usepackage{fontspec}                     %for loading fonts
+\usepackage{xunicode,xltxtra,url,parskip}     %other packages for formatting
+\RequirePackage{color,graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[big]{layaureo}                 %better formatting of the A4 page
+% an alternative to Layaureo can be ** \usepackage{fullpage} **
+\usepackage{supertabular}                 %for Grades
+\usepackage{titlesec}                    %custom \section
+
+%Setup hyperref package, and colours for links
+\usepackage{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
+
+%FONTS
+\defaultfontfeatures{Mapping=tex-text}
+%\setmainfont[SmallCapsFont = Fontin SmallCaps]{Fontin}
+%%% modified for Karol Kozioł for ShareLaTeX use
+\setmainfont[
+    SmallCapsFont = Fontin-SmallCaps.otf,
+    BoldFont = Fontin-Bold.otf,
+    ItalicFont = Fontin-Italic.otf
+]
+{Fontin.otf}
+%%%
+
+%CV Sections inspired by:
+%http://stefano.italians.nl/archives/26
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{3pt}{3pt}
+%Tweak a bit the top margin
+%\addtolength{\voffset}{-1.3cm}
+
+%Italian hyphenation for the word: ''corporations''
+\hyphenation{im-pre-se}
+
+%-------------WATERMARK TEST [**not part of a CV**]---------------
+\usepackage[absolute]{textpos}
+
+\setlength{\TPHorizModule}{30mm}
+\setlength{\TPVertModule}{\TPHorizModule}
+\textblockorigin{2mm}{0.65\paperheight}
+\setlength{\parindent}{0pt}
+
+%--------------------BEGIN DOCUMENT----------------------
+\begin{document}
+
+
+\pagestyle{empty} % non-numbered pages
+
+% \font\fb=''[cmr10]'' %for use with \LaTeX command
+
+%--------------------TITLE-------------
+\par{\centering
+    {\Huge Harsh \textsc{Gupta}
+}\bigskip\par}
+
+%--------------------SECTIONS-----------------------------------
+%Section: Personal Data
+\section{Personal Data}
+
+\begin{tabular}{rl}
+    \textsc{email:}     &
+    \href{mailto:gupta.harsh96@gmail.com}{gupta.harsh96@gmail.com}, \href{mailto:harsh.gupta@iitkgp.ac.in}{harsh.gupta@iitkgp.ac.in}\\
+    \textsc{LinkedIn}     &
+    \href{https://in.linkedin.com/in/hargup}{https://in.linkedin.com/in/hargup}\\
+    \textsc{GitHub}     & \href{https://github.com/hargup}{@hargup}
+\end{tabular}
+
+%Section: Work Experience at the top
+\section{Work Experience}
+\begin{tabular}{r|p{12cm}}
+
+    % Emphasize on the work you did, Use bullets
+
+    \emph{June 2015 -} & Wikipedia Gender Index (WIGI) \\\textsc{Current}&
+    \emph{\href{https://meta.wikimedia.org/wiki/Grants:IEG/WIGI:_Wikipedia_Gender_Index}{Individual
+    Engagement Grant, Wikimedia}}\\& \footnotesize{ Wikipedia Gender Indicators
+            or WIGI, is a Wikimedia sponsored inspire project which aims at
+            developing statistical and quantitative indicators for gender gap
+            and raise awareness by observing the trend of gender in biography
+            articles. I'm a co-developer on the project and created data
+            pipelines and an interactive portal to display data analysis.
+
+}\\\multicolumn{2}{c}{} \\
+
+
+\textsc{Summer 2015} & Summer Intern at
+\textsc{\href{http://continuum.io/}{Continuum Analytics}}
+    \emph{}\\&\footnotesize{
+    \begin{itemize}
+        \item Automated the process of building noarch conda packages from Python
+    Packaging Index (PyPI). Conda is the package manager which powers the
+    popular python distribution Anaconda.
+        \item Added support for numpy.median in Numba, a NumPy aware optimizing compiler
+    for Python.
+    \end{itemize}
+
+}\\\multicolumn{2}{c}{} \\
+
+
+
+    \textsc{December 2014} & Open Source Contributor to \href{http://afra.sbcs.qmul.ac.uk/}{Afra}
+    \emph{}\\&\footnotesize{Afra is an underdevelopment project by Queen Mary
+    University of London to crowdsource genome annotation.
+\begin{itemize}
+        \item Wrote Afra's automated test suite which is very important in keeping a
+software bug free.
+        \item Wrote script to export annotation submissions by users.
+\end{itemize}}\\\multicolumn{2}{c}{} \\
+
+
+
+
+\textsc{Summer 2014} &
+\href{https://github.com/sympy/sympy/wiki/GSoC-2014-Application-Harsh-Gupta:-Solvers}{Google
+Summer of Code Student, SymPy}
+\emph{}\\&\footnotesize{Wrote the new solveset module of SymPy. These new
+solvers provides a clear input and output interface, removes inconsistency
+between real and complex solvers and supports infinite solutions.}\\\multicolumn{2}{c}{} \\
+
+
+
+\textsc{Summer 2013} & Web Development Intern at BreatheArts \emph{}\\&\footnotesize{
+
+BreatheArts was online platform to sell and purchase art. I implemented a login
+system using OpenID and fixed the password recovery system on Breathe Art's
+ASP.NET online art galleries.
+
+}\\\multicolumn{2}{c}{} \\
+
+\end{tabular}
+
+%Section: Education
+\section{Education}
+\begin{tabular}{rl}
+\textsc{2012-current} & Master of Science, Bachelor of Science in
+    \textsc{Mathematics} and \textsc{Computing}
+    \\&7.89/10 \small\emph{CGPA},
+    \normalsize\textbf{Indian Institute of Technology}, Kharagpur\\
+\end{tabular}
+
+\section{Other Projects}
+
+\begin{tabular}{rp{12cm}}
+    \textsc{} & \textbf{\href{https://wiki.metakgp.org}{MetaKGP}} \\&
+       A collaborative effort to create a wiki to collect and curate the vast
+       amount of information created by the student community at IIT Kharagpur.
+\\\multicolumn{2}{c}{} \\
+
+    \textsc{} & \textbf{\href{https://github.com/metakgp/mcmp}{mcmp}} \\&
+        A co-developed a web interface where students can search professors of
+        IIT Kharagpur by their research areas, this was done by scraping
+        information from institute's website.
+\\\multicolumn{2}{c}{} \\
+
+\textsc{} & \textbf{Jigsaw Puzzle Solver} \\
+\textsc{} & \emph{Prof. S. K. Barai}, March 2014 \\&
+    Evaluated different techniques based on genetic algorithm to solve large
+    piece jigsaw puzzle (randomly shuffled pieces of an image); implemented
+    mutation strategies; came up with an approach to use this technique to solve
+    images with non unique components.
+\\\multicolumn{2}{c}{} \\
+
+\end{tabular}
+
+\section{Position of Responsibility}
+\begin{tabular}{rp{12cm}}
+\textsc{} &
+\textbf{\href{https://github.com/sympy/sympy/wiki/GSoC-2015-Report-Amit-Kumar-:-Solvers}{Google
+Summer of Code Mentor}}, 2015
+    \\&Mentored a student in improving the symbolic
+    solvers in SymPy, the pure python Computer Algebra System\\\multicolumn{2}{c}{} \\
+
+    \textsc{} & \textbf{Capitan, Data Analytics}
+    \\&
+    Responsible for leading the hostel team in the inter hostel
+    Data Analytics General Championship.
+\\\multicolumn{2}{c}{} \\
+
+\end{tabular}
+
+\section{Talks}
+\begin{itemize}
+    \item \emph{\href{https://www.youtube.com/watch?v=YCxQI4C34j8}{What's New with
+        SymPy solvers}}, lighting talk at SciPy 2015, Austin \\
+    \item \emph{Symbolic Computation with Python using SymPy}, workshop at PyCon India
+        2015, Bangalore
+\end{itemize}
+
+\section{Scholarships}
+\begin{itemize}
+    \item Receive the annual scholarship INSPIRE from Department of Science and Technology.
+    \item Received a scholarship to attend the Annual SciPy conference at
+    Austin, TX
+\end{itemize}
+
+
+% %Section: Languages
+% \section{Languages}
+% \begin{tabular}{rl}
+%     \textsc{Italian:}&Mothertongue\\
+%     \textsc{English:}&Fluent\\
+%     \textsc{French:}&Basic Knowledge\\
+% \end{tabular}
+
+\section{Skills}
+\begin{tabular}{rl}
+    Advanced Python, \LaTeX, Unix utilities,
+     Web Scraping, Data Visualization
+\end{tabular}
+
+\end{document}
