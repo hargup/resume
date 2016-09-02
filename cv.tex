@@ -1,0 +1,290 @@
+\documentclass[a4paper,10pt]{article}
+
+%A Few Useful Packages
+\usepackage{marvosym}
+\usepackage{fontspec}                     %for loading fonts
+\usepackage{xunicode,xltxtra,url,parskip}     %other packages for formatting
+\RequirePackage{color,graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[big]{layaureo}                 %better formatting of the A4 page
+% an alternative to Layaureo can be ** \usepackage{fullpage} **
+\usepackage{supertabular}                 %for Grades
+\usepackage{titlesec}                    %custom \section
+
+%Setup hyperref package, and colours for links
+\usepackage{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
+
+%FONTS
+\defaultfontfeatures{Mapping=tex-text}
+%\setmainfont[SmallCapsFont = Fontin SmallCaps]{Fontin}
+%%% modified for Karol Kozioł for ShareLaTeX use
+\setmainfont[
+    SmallCapsFont = Fontin-SmallCaps.otf,
+    BoldFont = Fontin-Bold.otf,
+    ItalicFont = Fontin-Italic.otf
+]
+{Fontin.otf}
+%%%
+
+%CV Sections inspired by:
+%http://stefano.italians.nl/archives/26
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{3pt}{3pt}
+
+%Italian hyphenation for the word: ''corporations''
+\hyphenation{im-pre-se}
+
+%-------------WATERMARK TEST [**not part of a CV**]---------------
+\usepackage[absolute]{textpos}
+
+\setlength{\TPHorizModule}{30mm}
+\setlength{\TPVertModule}{\TPHorizModule}
+\textblockorigin{2mm}{0.65\paperheight}
+\setlength{\parindent}{0pt}
+
+%--------------------BEGIN DOCUMENT----------------------
+\begin{document}
+
+
+\pagestyle{empty} % non-numbered pages
+
+% \font\fb=''[cmr10]'' %for use with \LaTeX command
+
+\begin{samepage}
+%--------------------TITLE-------------
+\par{\centering
+    {\Huge Harsh \textsc{Gupta}
+}\bigskip\par}
+
+%--------------------SECTIONS-----------------------------------
+%Section: Personal Data
+\section{Personal Data}
+
+\begin{tabular}{rl}
+    \textsc{email:}     &
+
+     \href{mailto:mail@hargup.in}{mail@hargup.in},
+     \href{mailto:gupta.harsh96@gmail.com}{gupta.harsh96@gmail.com}\\
+     % \href{mailto:harsh.gupta@iitkgp.ac.in}{harsh.gupta@iitkgp.ac.in} \\
+    \textsc{LinkedIn}     &
+    \href{https://in.linkedin.com/in/hargup}{https://in.linkedin.com/in/hargup}\\
+    \textsc{GitHub}     & \href{https://github.com/hargup}{https://github.com/hargup}
+\end{tabular}
+
+
+%Section: Work Experience
+\section{Work Experience}
+\begin{tabular}{r|p{12cm}}
+
+    % Emphasize on the work you did, Use bullets
+    \textsc{June 2016} & Intern at  \\\emph{July 2016}&
+    \textsc{\href{http://cis-india.org/}{The Center for Internet \& Society}}
+        \emph{}\\&
+    %     The Center for Internet \& Society is a non profit organization who
+    % does
+    % policy research in internet and digital technologies.
+        \begin{itemize}
+            \item Analyzed various technical alternatives to
+                Encrypted Media Extensions (EME) draft specification by W3C on
+                the strength of content protection, interoperability,
+                accessebility, security and privacy. The work required
+                understanding of the process of development of web standards,
+                understanding of internals of HTML video and understanding of the
+                application of Copyright laws in internet.
+
+            \item Performed a diversity analysis on participants of the debate
+                on Encrypted Media Extensions on the public-html mailing list
+                of W3C and found out that none of the participants from the
+                continents of Asia, Africa or South America.
+        \end{itemize}
+
+    \\\multicolumn{2}{c}{} \\
+
+    \emph{June 2015 - } & Wikipedia Human Gender Index (WHGI) \\\emph{March 2016}&
+    \emph{\href{https://meta.wikimedia.org/wiki/Grants:IEG/WIGI:_Wikipedia_Gender_Index}{Individual
+    Engagement Grant, Wikimedia}}\\& \\&
+            Wikipedia Human Gender Indicators (WHGI)
+            is a Wikimedia sponsored project which aims to
+            develop statistical and quantitative indicators for gender gap
+            and raise awareness by observing the trend of gender in biography
+            articles.
+        \begin{itemize}
+            \item Wrote data pipeline and analysis to compare the occupational
+                gender gap in statistics obtained from US Bureau of Labor and
+                Statistics and the data obtained from wikidata.
+            \item Created data pipelines and an interactive portal to display data analysis.
+            \item Analyzed and compared the occupational data from Wikipedia
+                biographies with the data provided by US Bureau of Labor Statistics
+        \end{itemize}
+
+\\\multicolumn{2}{c}{} \\
+
+
+\textsc{June 2015} & Software Development Intern at  \\\emph{July 2015} &
+\textsc{\href{http://continuum.io/}{Continuum Analytics}}
+    \emph{}\\&
+    \begin{itemize}
+        \item Automated the process of building noarch conda packages from Python
+    Packaging Index (PyPI). Conda is the package manager which powers the
+    popular python distribution Anaconda.
+        \item Added support for numpy.median in Numba, a NumPy aware optimizing compiler
+    for Python.
+    \end{itemize}
+
+\\\multicolumn{2}{c}{} \\
+
+% \textsc{Summer 2015} &
+% \textbf{\href{https://github.com/sympy/sympy/wiki/GSoC-2015-Report-Amit-Kumar-:-Solvers}{Google
+% Summer of Code Mentor}}, \\& \\&
+%         Mentored a student in improving the symbolic
+%         solvers in SymPy, the pure python Computer Algebra System\\\multicolumn{2}{c}{} \\
+
+
+
+    \textsc{December 2014} & Open Source Contributor to \href{http://afra.sbcs.qmul.ac.uk/}{Afra}
+        \emph{}\\& \\&
+        Afra is an underdevelopment project by Queen Mary
+    University of London to crowdsource genome annotation.
+\begin{itemize}
+        \item Wrote Afra's automated test suite in JavaScript's Jasmine
+            framework.
+        \item Wrote a ruby script to export annotation submissions by users.
+\end{itemize}\\\multicolumn{2}{c}{} \\
+
+
+
+
+\textsc{Summer 2014} &
+\href{https://github.com/sympy/sympy/wiki/GSoC-2014-Application-Harsh-Gupta:-Solvers}{Google
+Summer of Code Student, SymPy}
+\emph{}\\& \\&
+Wrote the new solveset module of SymPy. These new
+solvers provides a clear input and output interface, removes inconsistency
+between real and complex solvers and supports infinite solutions.\\\multicolumn{2}{c}{} \\
+
+% \textsc{Summer 2013} & Web Development Intern at BreatheArts \emph{}\\&\footnotesize{
+%
+% BreatheArts was an online platform to sell and purchase art. I implemented a login
+% system using OpenID and fixed the password recovery system on Breathe Art's
+% ASP.NET online art galleries.
+%
+% }\\\multicolumn{2}{c}{} \\
+\end{tabular}
+
+\end{samepage}
+
+
+
+\section{Education}
+
+\begin{tabular}{rl}
+    \textsc{2012-2017(expected)} & Master of Science, Bachelor of Science in
+    \textsc{Mathematics} and \textsc{Computing}
+    \\&7.53/10 \small\emph{CGPA},
+    \normalsize\textbf{Indian Institute of Technology}, Kharagpur\\
+\end{tabular}
+
+\section{Publications}
+
+\begin{itemize}
+\item  \textbf{Monitoring the Gender Gap with Wikipedia Human Gender Indicators}
+    (International Symposium for Open Collaboration 2016)\\
+    \textit{Maximilian Klein, Harsh Gupta, Vivek Rai, Haiyi Zhu}
+\end{itemize}
+
+
+% \section{Other Projects}
+%
+% \begin{tabular}{rp{12cm}}
+%     \textsc{} & \textbf{\href{https://wiki.metakgp.org}{MetaKGP}} \\&
+%
+%        A collaborative effort to create a wiki to collect and curate the vast
+%        amount of campus specific information relevant to the student community
+%        of IIT Kharagpur.
+%
+% \\\multicolumn{2}{c}{} \\
+%
+% %     \textsc{} & \textbf{\href{https://github.com/metakgp/mcmp}{mcmp}} \\&
+% %
+% %         A web interface where students can search professors of
+% %         IIT Kharagpur by their research areas, this was done by scraping
+% %         information from institute's website.
+% %
+% % \\\multicolumn{2}{c}{} \\
+%
+% \textsc{} & \textbf{Jigsaw Puzzle Solver} \\
+% \textsc{} & \emph{Prof. S. K. Barai}, March 2014 \\&
+%     Evaluated different techniques based on genetic algorithm to solve large
+%     piece jigsaw puzzle (randomly shuffled pieces of an image); implemented
+%     mutation strategies; came up with an approach to use this technique to solve
+%     images with non unique components.
+% \\\multicolumn{2}{c}{} \\
+%
+% \end{tabular}
+
+\section{Positions of Responsibility}
+\begin{itemize}
+
+    \item \textbf{Mentor, Google Summer of Code 2016, SymPy}
+    Co-mentored two students in successfully completing their Google Summer of
+    Code projects with SymPy.
+
+    \item \textbf{Mentor, Google Summer of Code 2016, SymPy}
+    Mentored a student in successfully completing their Google Summer of
+    Code project with SymPy.
+
+    \item \textbf{Capitan 2015-2016, Data Analytics, Azad Hall of Residence}
+    Responsible for leading the hostel team in the inter hostel
+    Data Analytics General Championship.
+
+\end{itemize}
+
+\section{Talks}
+\begin{itemize}
+    \item \emph{Tech is WEIRD}, lightning talk at SciPy 2016, Austin, USA
+    \item \emph{\href{https://www.youtube.com/watch?v=YCxQI4C34j8}{what's new with
+        sympy solvers}}, lighting talk at SciPy 2015, Austin, USA
+    \item \emph{symbolic computation with python using sympy}, workshop at
+        SciPy 2016, Austin, USA
+    \item \emph{Symbolic Computation with Python using SymPy}, workshop at PyCon India
+        2015, Bangalore, India
+\end{itemize}
+
+% \section{Scholarships}
+% \begin{itemize}
+%     \item Receive the annual scholarship INSPIRE from Department of Science and Technology.
+%     \item Received a scholarship to attend the Annual SciPy conference at
+%     Austin, TX
+% \end{itemize}
+
+
+% %Section: Languages
+% \section{Languages}
+% \begin{tabular}{rl}
+%     \textsc{Italian:}&Mothertongue\\
+%     \textsc{English:}&Fluent\\
+%     \textsc{French:}&Basic Knowledge\\
+% \end{tabular}
+
+\section{Relevant Courses}
+% \begin{tabular}{rl}
+\begin{itemize}
+\item Programming and Data Structure, Design and Analysis of Algorithms, Graph Theory and Algorithms
+\item Computer Organization and Architecture, Systems Programming, Theory of Operating Systems
+\item File Organization and Data Base Systems, Cryptography and Network Security
+\item Probability and Statistics, Stochastic Processes, Computational Statistics
+\item Numerical Solutions to ODE and PDE, Advanced Numerical Techniques, Linear Algebra, Operation Research
+\item Discrete Mathematics, Modern Algebra, Functional Analysis, Switching and Finite Automata
+\item Economics, Globalization and Culture, Constitutional Law - I, Introduction to Intellectual Property Law, Copyright, Laws of Patents - I
+\end{itemize}
+
+
+% \section{Skills}
+% \begin{tabular}{rl}
+%     Advanced Python, \LaTeX, Unix utilities,
+%      Web Scraping, Data Visualization
+% \end{tabular}
+
+\end{document}

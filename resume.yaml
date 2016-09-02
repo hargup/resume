@@ -1,0 +1,151 @@
+name                 : Harsh Gupta
+email                :
+    - mail@hargup.in
+    - gupta.harsh96@gmail.com
+university           : Indian Institute of Technology Kharagpur
+degree               : Master of Science, Bachelor of Science in Mathematics and Computing
+gpa                  : 7.53/10
+
+work_experience      :
+    - title: Intern
+      org: The Center for Internet & Society
+      period: May 2016 to July 2016
+      description: |
+                * Analyzed various technical alternatives to
+                Encrypted Media Extensions (EME) draft specification by W3C on
+                the strength of content protection, interoperability,
+                accessebility, security and privacy. The work required
+                understanding of the process of development of web standards,
+                understanding of internals of HTML video and understanding of the
+                application of Copyright laws in internet.
+
+                * Performed a diversity analysis on participants of the debate
+                on Encrypted Media Extensions on the public-html mailing list
+                of W3C and found out that none of the participants from the
+                continents of Asia, Africa or South America.
+
+    - title: Software Development Intern
+      org: Continuum Analytics
+      period: May 2015 to July 2015
+      description: |
+                    * Automated the process of building noarch conda packages from Python
+                    Packaging Index (PyPI). Conda is the package manager which powers the
+                    popular python distribution Anaconda.
+                    * Added support for numpy.median in Numba, a NumPy aware optimizing compiler
+                    for Python.
+
+    - title: Developer and Researcher
+      org: Wikipedia Human Gender Indicators
+      period: June 2015 to Mar 2016
+      description: |
+            Wikipedia Human Gender Indicators (WHGI)
+            is a Wikimedia sponsored project which aims to
+            develop statistical and quantitative indicators for gender gap
+            and raise awareness by observing the trend of gender in biography
+            articles. During my internship I:
+            * Wrote data pipeline and analysis to compare the occupational
+                gender gap in statistics obtained from US Bureau of Labor and
+                Statistics and the data obtained from wikidata.
+            * Created data pipelines and an interactive portal to display data analysis.
+            * Analyzed and compared the occupational data from Wikipedia
+                biographies with the data provided by US Bureau of Labor Statistics
+
+    - title: Software Development Intern
+      org: 5Bases
+      period: December 2014
+      description: |
+            Afra is an underdevelopment project to crowdsource genome annotation. During my intership I:
+            * Wrote automated test suite in JavaScript's Jasmine
+                framework.
+            * Wrote a ruby script to export annotation submissions by users.
+
+    - title: Student Developer
+      org: Google Summer of Code (GSoC) - SymPy
+      period: May 2014 to August 2014
+      description: |
+            SymPy is a python library for symbolic computation.
+            During the summer I wrote the new solveset module of SymPy. These
+            new solvers provides a clear input and output interface, removes
+            inconsistency between real and complex solvers and supports
+            infinite solutions. I've remained involved with SymPy much after
+            the summer and have mentored GSoC students both in summer of 2015
+            and 2016 to carry forward the work I started.
+
+
+    - title: Intern
+      org: Breathe Arts
+      period: May 2013 to June 2013
+      description: |
+            BreatheArts is an online platform to sell and purchase art. I
+            implemented a login system using OpenID and fixed the password
+            recovery system on Breathe Art's ASP.NET online art galleries.
+
+por:
+    - role: Mentor
+      org: Google Summer of Code - SymPy
+      period: May 2015 to August 2015
+      description: |
+            Mentored a student in successfully completing their Google Summer of
+            Code project with SymPy.
+
+    - role: Mentor
+      org: Google Summer of Code - SymPy
+      period: May 2016 to August 2016
+      description: |
+            Co-mentored two students in successfully completing their Google Summer of
+            Code projects with SymPy.
+
+    - role: Captian Data Analytics Team
+      org: Azad Hall of Residence
+      period: Academic year 2015 - 2016
+      description: |
+            I was Responsible for leading the hostel team in the inter hostel
+            Data Analytics General Championship.
+
+    - role: Tech Head, Source Code
+      org: Kshitij 2016
+      description: |
+
+          I was responsible for setting the problems for the Source Code event
+          at Kshitij 2016, The Techno-Management Fest of IIT Kharagpur. In the
+          event participants had to write programs which will produce identical
+          output as the given binary executable.
+
+    - role: Head, Lane Following and Shape Detection
+      org: Robotics Winter Workshop
+      period: December 2014
+      description: |
+
+          During the workshop I was responsible for teaching students Lane
+          Following and shape detection using basic image processing techniques
+          like edge detection, corner detection and image segementation.
+
+courses:
+    - Programming and Data Structure, Design and Analysis of Algorithms, Graph Theory and Algorithms
+    - Computer Organization and Architecture, Systems Programming, Theory of Operating Systems
+    - File Organization and Data Base Systems, Cryptography and Network Security
+    - Probability and Statistics, Stochastic Processes, Computational Statistics
+    - Numerical Solutions to ODE and PDE, Advanced Numerical Techniques, Linear Algebra, Operation Research
+    - Discrete Mathematics, Modern Algebra, Functional Analysis, Switching and Finite Automata
+    - Economics, Globalization and Culture, Constitutional Law - I, Introduction to Intellectual Property Law, Copyright, Laws of Patents - I
+
+talks:
+    - Tech is WEIRD, lightning talk at SciPy 2016, Austin, USA
+    - what's new with sympy solvers, lightning talk at SciPy 2015, Austin, USA
+    - symbolic computation with python using SymPy, workshop at SciPy 2016, Austin, USA
+    - symbolic computation with python using SymPy, workshop at PyCon India 2015, Bangalore, India
+
+publications:
+    - title: Monitoring the Gender Gap with Wikipedia Human Gender Indicators
+      conf: OpenSym 16 Proceedings of the 12th International Symposium on Open Collaboration
+      authors: Maximilian Klein, Harsh Gupta, Vivek Rai, Piotr Konieczny, Haiyi Zhu
+      abstract: |
+
+                The gender gap in Wikipedia’s content, specifically in the representation of women in biographies, is well-known but has been difficult to measure. Furthermore the impacts of efforts to address this gender gap have received little attention. To investigate we utilise Wikidata, the database that feeds Wikipedia, and introduce the “Wikidata Human Gender Indicators” (WHGI), a free and open source, longitudinal, biographical dataset monitoring gender disparities across time, space, culture, occupation and language. Through these lenses we show how the representation of women is changing along 11 dimensions. Validations of WHGI are presented against three exogenous datasets: the world’s historical population, “traditional” gender-disparity indices (GDI, GEI, GGGI and SIGI), and occupational gender according to the US Bureau of Labor Statistics. Furthermore, to demonstrate its general use in research, we revisit previously published findings on Wikipedia’s gender bias that can be strengthened by WHGI.
+
+
+    - title: "SymPy: Symbolic computing in Python"
+      conf:  PeerJ Preprints
+      authors: Meurer A, Smith CP, Paprocki M, Čertík O, Kirpichev SB, Rocklin M, Kumar A, Ivanov S, Moore JK, Singh S, Rathnayake T, Vig S, Granger BE, Muller RP, Bonazzi F, Gupta H, Vats S, Johansson F, Pedregosa F, Curry MJ, Terrel AR, Roučka Š, Saboo A, Fernando I, Kulal S, Cimrman R, Scopatz A.
+      abstract: |
+          SymPy is an open source computer algebra system written in pure Python. It is built with a focus on extensibility and ease of use, through both interactive and programmatic applications. These characteristics have led SymPy to become the standard symbolic library for the scientific Python ecosystem. This paper presents the architecture of SymPy, a description of its features, and a discussion of select domain specific submodules. The supplementary materials provide additional examples and further outline details of the architecture and features of SymPy.
